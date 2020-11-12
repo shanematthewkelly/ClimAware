@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".Profile.ProfileFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/imageBackground"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#558ef2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="3dp"
+            app:cardElevation="8dp"
+            android:id="@+id/bigCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomCard"
+            app:layout_constraintEnd_toStartOf="@+id/rightside"
+            app:layout_constraintStart_toStartOf="@+id/leftside"
+            app:layout_constraintTop_toTopOf="@+id/guideline6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cardConstraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/cardTopGuide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.46" />
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/imageView8"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:src="@drawable/icboss"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/editprofileImage"
+                    android:layout_width="223dp"
+                    android:layout_height="266dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/rainforest"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#979797"
+                    app:civ_shadow_radius="60"
+                    app:layout_constraintBottom_toTopOf="@+id/cardTopGuide"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.503"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/editUsername"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginEnd="32dp"
+                    android:paddingLeft="12dp"
+                    android:hint="Username"
+                    android:textSize="19sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.227"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/cardTopGuide" />
+
+                <!--                <TextView-->
+<!--                    android:id="@+id/profilephone"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="72dp"-->
+<!--                    android:layout_marginTop="32dp"-->
+<!--                    android:layout_marginEnd="32dp"-->
+<!--                    android:paddingLeft="12dp"-->
+<!--                    android:text="Phone"-->
+<!--                    android:textSize="19sp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="0.0"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/profilemyemail" />-->
+
+                <ImageView
+                    android:id="@+id/profileusernameImg"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_person_outline_black_24dp"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="@+id/editUsername"
+                    app:layout_constraintEnd_toStartOf="@+id/editUsername"
+                    app:layout_constraintTop_toTopOf="@+id/editUsername" />
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageView10"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingRight="4dp"-->
+<!--                    android:src="@drawable/ic_mobiler_main"-->
+<!--                    android:tint="@color/colorPrimary"-->
+<!--                    app:layout_constraintBottom_toBottomOf="@+id/profilephone"-->
+<!--                    app:layout_constraintEnd_toStartOf="@+id/profilephone"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/profilephone" />-->
+
+                <Button
+                    android:id="@+id/updateProfileBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/login_button_style"
+                    android:text="Update  "
+                    android:textColor="#fff"
+                    android:drawableRight="@drawable/ic_person_pin_black_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.11" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.27" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottomCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.96" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

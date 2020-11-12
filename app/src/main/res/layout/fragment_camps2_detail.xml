@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_marginTop="40dp"
+        android:id="@+id/circleview2"
+        android:layout_width="323dp"
+        android:layout_height="366dp"
+        android:src="@drawable/clean_air"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#979797"
+        app:civ_shadow_radius="60"
+        android:layout_centerHorizontal="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clean Air Task Force"
+            android:textStyle="bold"
+            android:layout_below="@id/circleview2"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/belowtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:layout_below="@id/circleview2"
+            android:textSize="21sp"
+            android:textColor="@color/darkgray"
+            android:textStyle="bold"
+            android:layout_marginLeft="26dp"
+           />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/belowsmalltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+            android:layout_below="@id/belowtxt"
+            android:textSize="15sp"
+            android:textColor="@color/darkgray"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/belowsmalltxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+            android:layout_below="@id/belowsmalltxt"
+            android:textSize="15sp"
+            android:textColor="@color/darkgray"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/belowsmalltxt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+            android:layout_below="@id/belowsmalltxt2"
+            android:textSize="15sp"
+            android:textColor="@color/darkgray"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            />
+
+
+
+        <Button
+        android:id="@+id/donationBtn"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_style"
+        android:text="Donate"
+        android:layout_below="@id/belowsmalltxt3"
+        android:textColor="#fff"
+        android:drawableRight="@drawable/ic_send_black_24dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

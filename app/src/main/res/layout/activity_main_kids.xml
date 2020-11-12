@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapp"
+    tools:context=".Core.MainActivity"
+    android:focusable="true"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/textScreen"
+        android:layout_marginTop="40dp"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="ClimAware Game"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bgquestion"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="290dp"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/textQuestion"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textColor="#332FA2"
+            android:layout_width="230dp"
+            android:lineSpacingExtra="6dp"
+            android:layout_height="wrap_content"
+            android:text="What air animal is affected by climate change?"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="#332FA2"
+        android:textSize="32sp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/bgpurple"
+        android:layout_width="200dp"
+        android:layout_height="80dp">
+    </EditText>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:text="Letters"
+        android:textSize="24sp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:layout_marginRight="28sp"
+        android:layout_marginLeft="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"></LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#558ef2"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/customConstraintHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Discover"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:srcCompat="@drawable/ill_main" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/card_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/col1right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.32" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/col1left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.36" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/col2right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.64" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/col2left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.68" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/row1bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.48" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/row2top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/row2bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guttertop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gutterright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gutterleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/dash_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row1bottom"
+            app:layout_constraintEnd_toStartOf="@+id/col1right"
+            app:layout_constraintStart_toStartOf="@+id/gutterleft"
+            app:layout_constraintTop_toTopOf="@+id/guttertop"
+            app:loaderColor="@{@color/amber}"
+            app:title='@{"All\nNews"}' />
+
+        <include layout="@layout/dash_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:title='@{"Our\nCampaign"}'
+            app:loaderColor="@{@color/greenmaterial}"
+            app:layout_constraintBottom_toTopOf="@+id/row1bottom"
+            app:layout_constraintEnd_toStartOf="@+id/col2right"
+            app:layout_constraintStart_toStartOf="@+id/col1left"
+            app:layout_constraintTop_toTopOf="@+id/guttertop"/>
+
+        <include
+            android:id="@+id/include2"
+            layout="@layout/dash_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row1bottom"
+            app:layout_constraintEnd_toStartOf="@+id/gutterright"
+            app:layout_constraintStart_toStartOf="@+id/col2left"
+            app:layout_constraintTop_toTopOf="@+id/guttertop"
+            app:loaderColor="@{@color/redmaterial}"
+            app:title='@{"World \nStatistics"}' />
+
+        <include
+            android:id="@+id/include3"
+            layout="@layout/dash_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row2bottom"
+            app:layout_constraintEnd_toStartOf="@+id/col1right"
+            app:layout_constraintStart_toStartOf="@+id/gutterleft"
+            app:layout_constraintTop_toTopOf="@+id/row2top"
+            app:loaderColor="@{@color/bluematerial}"
+            app:title='@{"All \nBlogs"}' />
+
+        <include
+            android:id="@+id/include4"
+            layout="@layout/dash_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row2bottom"
+            app:layout_constraintEnd_toStartOf="@+id/col2right"
+            app:layout_constraintStart_toStartOf="@+id/col1left"
+            app:layout_constraintTop_toTopOf="@+id/row2top"
+            app:loaderColor="@{@color/orangematerial}"
+            app:title='@{"My \nProfile"}' />
+
+        <include
+            android:id="@+id/include5"
+            layout="@layout/dash_card"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row2bottom"
+            app:layout_constraintEnd_toStartOf="@+id/gutterright"
+            app:layout_constraintStart_toStartOf="@+id/col2left"
+            app:layout_constraintTop_toTopOf="@+id/row2top"
+            app:loaderColor="@{@color/purplematerial}"
+            app:title='@{"My \nSettings"}' />
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardOneClickable"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row1bottom"
+            app:layout_constraintEnd_toStartOf="@+id/col1right"
+            app:layout_constraintStart_toStartOf="@+id/gutterleft"
+            app:layout_constraintTop_toTopOf="@+id/guttertop">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardTwoClickable"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row1bottom"
+            app:layout_constraintEnd_toStartOf="@+id/col2right"
+            app:layout_constraintStart_toStartOf="@+id/col1left"
+            app:layout_constraintTop_toTopOf="@+id/guttertop">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardThreeClickale"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row1bottom"
+            app:layout_constraintEnd_toStartOf="@+id/gutterright"
+            app:layout_constraintStart_toStartOf="@+id/col2left"
+            app:layout_constraintTop_toTopOf="@+id/guttertop">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardFourClickable"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row2bottom"
+            app:layout_constraintEnd_toStartOf="@+id/col1right"
+            app:layout_constraintStart_toStartOf="@+id/include3"
+            app:layout_constraintTop_toTopOf="@+id/row2top">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardFiveClickable"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row2bottom"
+            app:layout_constraintEnd_toStartOf="@+id/col2right"
+            app:layout_constraintStart_toStartOf="@+id/col1left"
+            app:layout_constraintTop_toTopOf="@+id/row2top">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardSixClickable"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/row2bottom"
+            app:layout_constraintEnd_toStartOf="@+id/gutterright"
+            app:layout_constraintStart_toStartOf="@+id/col2left"
+            app:layout_constraintTop_toTopOf="@+id/row2top">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

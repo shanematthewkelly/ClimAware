@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="20dp"
+    android:paddingBottom="8dp"
+    android:focusable="true"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Trending Campaigns"
+            android:textColor="@color/darkgray"
+            android:gravity="center"
+            android:textSize="30sp"
+            />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview10"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/topLine"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/rainforest"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/topLine">
+
+
+
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="23dp"
+                        android:id="@+id/textView"
+                        android:paddingLeft="10dp"
+                        android:layout_toRightOf="@+id/imagestats"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Coalition for Rainforest Nations"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/maybeline"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/linearLayout2">
+
+                    <Button
+                        android:id="@+id/camps1"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_button_style"
+                        android:text="Discover"
+                        android:layout_below="@id/textView"
+                        android:textColor="#fff"
+                        android:drawableRight="@drawable/ic_send_black_24dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_below="@id/linearLayout2"
+                    android:layout_marginTop="-30dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/textView2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+                    android:textColor="#6c6c6c"
+                    android:fontFamily="sans-serif-medium"/>
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview20"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutsecond"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/clean_air"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutsecond2"
+                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/linearLayoutsecond">
+
+
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="23dp"
+                        android:id="@+id/textViewsecond"
+                        android:paddingLeft="10dp"
+                        android:layout_toRightOf="@+id/imagecamps"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Clean Air Task Force"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutsecond3"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/linearLayoutsecond2">
+
+                    <Button
+                        android:id="@+id/camps2"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_button_style"
+                        android:text="Discover"
+                        android:layout_below="@id/textViewsecond"
+                        android:textColor="#fff"
+                        android:drawableRight="@drawable/ic_send_black_24dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_below="@id/linearLayoutsecond2"
+                    android:layout_marginTop="-30dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/textViewsecond2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+                    android:textColor="#6c6c6c"
+                    android:fontFamily="sans-serif-medium"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview30"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutthird"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/rainforestus"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutthird2"
+                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/linearLayoutthird">
+
+
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="23dp"
+                        android:id="@+id/textViewthird"
+                        android:paddingLeft="10dp"
+                        android:layout_toRightOf="@+id/imagecamps2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Rainforest Foundation US"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutthird3"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/linearLayoutthird2">
+
+                    <Button
+                        android:id="@+id/camps3"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_button_style"
+                        android:text="Discover"
+                        android:layout_below="@id/textViewsecond"
+                        android:textColor="#fff"
+                        android:drawableRight="@drawable/ic_send_black_24dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_below="@id/linearLayoutthird2"
+                    android:layout_marginTop="-30dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/textViewthird2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+                    android:textColor="#6c6c6c"
+                    android:fontFamily="sans-serif-medium"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview40"
+            android:layout_height="400dp"
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutforth"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/sandbag"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutforth2"
+                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/linearLayoutforth">
+
+
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="23dp"
+                        android:id="@+id/textViewforth"
+                        android:paddingLeft="10dp"
+                        android:layout_toRightOf="@+id/imagecamps2"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:text="Sandbag"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutforth3"
+                    android:layout_height="200dp"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@id/linearLayoutforth2">
+
+                    <Button
+                        android:id="@+id/camps4"
+                        android:layout_marginTop="15dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/login_button_style"
+                        android:text="Discover"
+                        android:layout_below="@id/textViewsecond"
+                        android:textColor="#fff"
+                        android:drawableRight="@drawable/ic_send_black_24dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="15dp"
+                    android:layout_below="@id/linearLayoutforth2"
+                    android:layout_marginTop="-30dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/textViewforth2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+                    android:textColor="#6c6c6c"
+                    android:fontFamily="sans-serif-medium"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

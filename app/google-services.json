@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "427435410098",
+    "firebase_url": "https://climateawareness-application.firebaseio.com",
+    "project_id": "climateawareness-application",
+    "storage_bucket": "climateawareness-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427435410098:android:26602bbfa7f1af1c47ffab",
+        "android_client_info": {
+          "package_name": "com.example.climateawarenessapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427435410098-j683knrr2392j4akbatahlgofe0kstbp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.climateawarenessapplication",
+            "certificate_hash": "6b5171d975972e414759233bdd79bf128a1ce42e"
+          }
+        },
+        {
+          "client_id": "427435410098-22btct6qibdq7k8np1ol638qtst9cv80.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.climateawarenessapplication",
+            "certificate_hash": "b17bb771ecd45eedc91a2d883595568b1ca07e83"
+          }
+        },
+        {
+          "client_id": "427435410098-q8td76t9a5l0rpp52l5aekb3iq2399df.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0uzmFDax0tZkySTw1Kmtdb3vZSw54Pog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427435410098-q8td76t9a5l0rpp52l5aekb3iq2399df.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

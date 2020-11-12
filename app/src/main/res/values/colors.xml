@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    App Main colour palette-->
+    <color name="colorPrimary">#78A7F9</color>
+    <color name="colorPrimary2">#5976a8</color>
+    <color name="colorPrimaryDark">#78A7F9</color>
+    <color name="colorAccent">#1e344b</color>
+    <color name="darkgray">#6c6c6c</color>
+    <color name="colorBackground">#f9f9fa</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#262626</color>
+    <color name="colorPurple">#332FA2</color>
+
+
+    <!--    Basic colours-->
+    <color name="red">#ff0000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="orange">#ffa500</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="pink">#fe104d</color>
+    <color name="lightgrey">#ededeb</color>
+    <color name="transparent">#00000000</color>
+
+    <!--Material Design Color Palette-->
+    <color name="amber">#FFC107</color>
+    <color name="greenmaterial">#4CAF50</color>
+    <color name="redmaterial">#F44336</color>
+    <color name="bluematerial">#3F51B5</color>
+    <color name="orangematerial"> #FF5722</color>
+    <color name="purplematerial"> #9C27B0</color>
+
+
+</resources>
