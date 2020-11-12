@@ -10,4 +10,4 @@ ClimAware is a dynamic, interactive and feature-rich climate awareness applicati
 > 👥 'User Profile' section for allowing users to modify their account to their needs using Firebase Auth & Database<br><br>
 > ⚙️ 'Settings' section for allowing users to donate to the developer, manage notifications and Dark Mode UI<br><br>
 > 🔔 'Notifications' for daily to-do tasks to aid in improving the environement locally.<br><br>
-> ✋ Biometrics & Firebases Face Detection software implementation for bot verification and secure payment login.<br><br>
+> ✋ Biometrics & Firebase Face Detection software implementation for bot verification and secure payment checkout.<br><br>
